@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar top */
+
+.navbar{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.topback {
+
+    height: 90px;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.effect{
+    /* background-color: #B7B9F4; */
+    background-image: linear-gradient(to bottom,#5254D8 0%, transparent 100%);
+    margin-bottom: 10px;
+}
+
+.brandicon{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.imagechange {
+    font-size: 50px;
+    position: relative;
+    left: 14%;
+}
+
+.nav_items{
+    margin-right: 10%;
+    position: relative;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+h3 {
+    display: inline;
+    margin: 12px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Main area showcase */
+
+.main_area{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    position: relative;    
+    text-align: center;
+}
+
+.img0{
+    z-index: 2;
+    width: 70%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    position: relative;
+    border: #B7B9F4 solid 1px;
+    border-radius: 8px;
+}
+
+.main_fadeInLeft{
+    animation-name: fadeInLeft;
+    animation-duration: 0.2s;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    0%{
+        left: -10%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.main_fadeInRight{
+    animation-name: fadeInRight;
+    animation-duration: 0.2s;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes fadeInRight {
+    0%{
+        left: 10%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.img1{
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    right: -80%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.img2{
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    right: 0%;
+    z-index: 0;
+    margin: auto;
+    left: -80%;
+    opacity: 0;
+}
+
+.img3{
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    right: 0%;
+    z-index: 0;
+    margin: auto;
+    left: -80%;
+    opacity: 0;
+}
+
+.img4{
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+    margin: auto;
+    left: -80%;
+    opacity: 0.5;
+}
+
+
+
+.leftbtn, .rightbtn{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 5;
+    width: 10%;
+    color: white;
+    
+}
+
+.leftbtn{
+    background-color: black;
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.leftbtn:hover{
+    opacity: 0.8;
+}
+
+
+.rightbtn{
+    text-align: right;
+    left: 90%;
+    background-color: black;
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.rightbtn:hover{
+    opacity: 0.8;
+}
+
+.arrows{
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.dynamicback{
+    background-image: url("images/cover0.jpg");
+    width: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    height: auto;
+    z-index: -1;
+    filter: blur(5px);
+    transition: all;
+}
+
+.backAnimation{
+    animation-name: backAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.backAnimationRem{
+    animation-name: backAnimRem;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backAnimRem {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes backAnim {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*Navbar end*/
+
